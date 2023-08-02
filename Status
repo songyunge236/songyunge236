@@ -1,0 +1,18 @@
+
+Status Foo()
+{
+    Status status = Check1();
+    if (!status.IsOk())
+    {
+        return status;
+    }
+    else
+    {
+        status = Check2();
+        if (!status.IsOk())
+        {
+            return status;
+        }
+        else
+        {
+            ..............
