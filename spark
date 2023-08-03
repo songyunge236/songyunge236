@@ -1,0 +1,13 @@
+for(m=1;m<t;++m){
+		spark=new Object();
+		spark.x=x; spark.y=y; spark.z=z;
+		p1=pi*2*Math.random();
+		p2=pi*Math.random();
+		v=sparkV*(1+Math.random()/6)
+		spark.vx=Math.sin(p1)*Math.sin(p2)*v;
+		spark.vz=Math.cos(p1)*Math.sin(p2)*v;
+		spark.vy=Math.cos(p2)*v;
+		switch(type){
+			case 0: spark.img=sparkPics[pic1]; break;
+			case 1:
+				spark.img=sparkPics[parseInt(Math.random()*2)?pic1:pic2];
