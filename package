@@ -1,0 +1,15 @@
+package com.sun.content.server.service.gateway.sample; 
+ 
+import com.sun.content.server.service.gateway.WAPGatewayAdapter; 
+import com.sun.content.server.service.gateway.WAPGatewayException; 
+import javax.servlet.http.HttpServletRequest; 
+ 
+public class SampleWAPGateway extends WAPGatewayAdapter 
+{ 
+  /* Method to check if the passed method is implemented in this 
+   * class or not. */ 
+  public boolean doHandle(String method) throws WAPGatewayException 
+  { 
+    if (method.equals("getMSISDN")) 
+      return true; 
+    return false; 
