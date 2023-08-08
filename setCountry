@@ -1,0 +1,20 @@
+ fInfo.put("city", param1); 
+    } 
+ 
+ 
+    public String getState() { 
+        return (String)fInfo.get("state"); 
+    } 
+    public void setState(String param1) { 
+        if (param1 != null) 
+            fInfo.put("state", param1); 
+    } 
+ 
+	public String getCountry() { 
+	        return (String)fInfo.get("country"); 
+	} 
+	public void setCountry(String param1) { 
+		if (param1 != null) 
+	    	fInfo.put("country", param1); 
+	} 
+ 
