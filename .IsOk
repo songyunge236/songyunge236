@@ -1,0 +1,10 @@
+Status status = Check1(request);
+    if (!status.IsOk())
+    {
+         response->set_errorcode(status.Code());
+         return;
+    }
+    status = Check2(request);
+    if (!status.IsOk())
+    {
+         response->set_errorcode(status.Code());
