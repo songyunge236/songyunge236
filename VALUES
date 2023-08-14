@@ -1,0 +1,11 @@
+  ORDINAL_INVOICE_DATE = ri_invoice.getOrdinal( "inv_date" );
+
+        PreparedStatement ri_item = conn.prepareStatement(
+            "INSERT INTO InvoiceItem( inv_no, item_no, prod_no, quantity, price )"
+            + " VALUES( ?, ?, ?, ?, ? )"
+        );
+        ORDINAL_INV_ITEM_INV_NO = 1;
+        ORDINAL_INV_ITEM_ITEM_NO = 2;
+        ORDINAL_INV_ITEM_PROD_NO = 3;
+        ORDINAL_INV_ITEM_QUANTITY = 4;
+        ORDINAL_INV_ITEM_PRICE = 5;
