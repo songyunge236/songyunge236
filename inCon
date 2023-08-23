@@ -1,0 +1,4 @@
+ public ContentInfo[] getContentInfos( 
+    ContentInfo[] inContentInfos, 
+    BillingInfo[] inBillingInfos) 
+  throws ContentException 
